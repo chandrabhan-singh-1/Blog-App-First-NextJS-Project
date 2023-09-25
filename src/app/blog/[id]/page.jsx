@@ -5,7 +5,7 @@ import me from "public/me.jpg";
 import { notFound } from "next/navigation";
 
 async function getData(id) {
-  const res = await fetch(`http://localhost:8080/api/posts/${id}`, {
+  const res = await fetch(`${process.env.NEXTAUTH_URL}/api/posts/${id}`, {
     next: { revalidate: 30 },
   });
 
