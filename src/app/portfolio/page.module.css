@@ -1,0 +1,83 @@
+.mainTitle {
+  font-size: 4rem;
+}
+
+.container {
+  /* background-color: rgb(0, 0, 0); */
+  min-height: 95vh;
+  padding: 2rem 2rem;
+  border-radius: 5px;
+}
+
+.selectTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(
+    to bottom right,
+    rgb(135, 135, 135),
+    rgb(45, 248, 231)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.items {
+  display: flex;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.item {
+  width: 20rem;
+  height: 30rem;
+  border: 3px solid rgb(192, 186, 186);
+  border-radius: 10px;
+  padding: 2rem;
+  align-items: end;
+  filter: saturate(2);
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: all 0.6s ease-in-out;
+}
+
+.item:hover {
+  color: rgb(128, 255, 217);
+  text-shadow: 15px 15px 10px rgba(153, 240, 255, 0.4);
+  box-shadow: 15px 15px 15px 0 rgba(153, 240, 255, 0.3);
+  transform: scale(1.08);
+  filter: saturate(3);
+  border-color: rgb(128, 255, 217);
+
+  > .title {
+    color: rgb(128, 255, 217);
+  }
+}
+
+.item:nth-child(1) {
+  background-image: url("../../../public/illustration.png");
+}
+
+.item:nth-child(2) {
+  background-image: url("../../../public/websites.jpg");
+}
+
+.item:nth-child(3) {
+  background-image: url("../../../public/apps.jpg");
+}
+
+.title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 2.3rem;
+  font-weight: 500;
+  position: sticky;
+}

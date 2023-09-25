@@ -1,0 +1,25 @@
+.container {
+  padding: 3rem;
+}
+
+.heading {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.linkContainer {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.img {
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
